@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f4f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.botoes button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.botoes button:first-child {
+    background-color: #4caf50;
+    color: white;
+}
+
+.botoes button:first-child:hover {
+    background-color: #45a049;
+}
+
+.botoes button:last-child {
+    background-color: #f44336;
+    color: white;
+}
+
+.botoes button:last-child:hover {
+    background-color: #da190b;
+}
+
+#mensagem {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.numeros-meta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.numero {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    margin: 3px;
+    border-radius: 50%;
+    background: #ddd;
+    color: black;
+    font-weight: bold;
+    font-size: 12px;
+    cursor: default;
+    transition: 0.3s;
+}
+
+.numero.registrado {
+    background: #4caf50;
+    color: white;
+}

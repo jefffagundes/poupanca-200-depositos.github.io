@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Poupança</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Minha Poupança</h1>
+        <h2>Meta: R$ 20.000</h2>
+        <h2>Saldo Atual: R$ <span id="saldo">0</span></h2>
+        <h2>Falta para a meta: R$ <span id="falta">20.000</span></h2>
+
+
+        <input type="number" id="valor" placeholder="Digite o valor a adicionar">
+        <div class="botoes">
+            <button onclick="adicionar()">Adicionar</button>
+            <button onclick="resetar()">Resetar Saldo</button>
+        </div>
+
+        <p id="mensagem"></p>
+
+        <h3>Depósitos</h3>
+        <div class="numeros-meta" id="numeros-meta">
+            <!-- Números de 1 a 200 serão gerados aqui -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
